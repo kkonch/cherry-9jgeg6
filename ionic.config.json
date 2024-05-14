@@ -1,0 +1,8 @@
+{
+  "name": "cherry",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "7ec22770"
+}
