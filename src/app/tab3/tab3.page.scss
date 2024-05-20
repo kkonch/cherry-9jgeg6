@@ -1,0 +1,37 @@
+.menu-icon {
+    display: flex;
+    color: #0E103D;
+    font-size: 50px;
+    margin-right: 330px;
+}
+
+ion-label {
+    font-family: 'Cherry Bomb';
+    color: #84012A;
+    font-size: 30px;
+}
+
+.cherry-logo, ion-toolbar, .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cherry-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+ion-toolbar {
+    padding: 0;
+    min-height: 80px;
+    --background: #D3EDF9;
+    border-bottom: 1px solid #959EC9;
+}
+
+ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
