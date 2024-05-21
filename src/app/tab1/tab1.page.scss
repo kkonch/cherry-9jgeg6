@@ -3,90 +3,101 @@
     color: #0E103D;
     font-size: 50px;
     margin-right: 330px;
-}
-
-ion-label {
+  }
+  
+  ion-label {
     font-family: 'Inter';
     color: #0E103D;
     font-size: 18px;
-}
-
-.cherry-label {
+  }
+  
+  .cherry-label {
     font-family: 'Cherry Bomb';
     color: #84012A;
     font-size: 30px;
-}
-
-.cherry-logo, ion-toolbar, .header-content {
+  }
+  
+  .cherry-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  ion-toolbar, .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#cherry-icon {
+  }
+  
+  #cherry-icon {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-}
-
-ion-toolbar {
+  }
+  
+  ion-toolbar {
     padding: 0;
     min-height: 80px;
     --background: #D3EDF9;
     border-bottom: 1px solid #959EC9;
-}
-
-ion-title {
+  }
+  
+  ion-title {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-}
-
-.key {
+    justify-content: flex-start; /* Align content to the start (left) */
+    padding-left: 90px; /* Increase padding to adjust the position */
+  }
+  
+  .key {
     width: 93%;
     height: 25%;
     border-radius: 10px;
     margin: 3%;
     background-color: #FFFEEA;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.cycle-types {
+  }
+  
+  .cycle-types {
     padding-top: 7%;
     width: 80%;
     margin-left: 3%;
-}
-
-ion-row {
+  }
+  
+  ion-row {
     display: block;
-}
-
-ion-col {
+  }
+  
+  ion-col {
     display: inline-block;
     padding: 8px;
     align-items: center;
     justify-content: center;
-}
-
-.menstruation-color, .ovulation-color, .follicular-color, .luteal-color{
+  }
+  
+  .menstruation-color, .ovulation-color, .follicular-color, .luteal-color {
     width: 60px;
     height: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-}
-
-.menstruation-color {
+  }
+  
+  .menstruation-color {
     background-color: #84012A;
-}
-
-.ovulation-color {
+  }
+  
+  .ovulation-color {
     background-color: #4F5172;
-}
-
-.follicular-color {
+  }
+  
+  .follicular-color {
     background-color: #989FC7;
-}
-
-.luteal-color {
+  }
+  
+  .luteal-color {
     background-color: #282749;
-}
+  }
+  .align-top {
+    align-self: flex-start; /* Aligns content to the top */
+    margin-top: -50px; /* Adjust this value to move the label higher */
+    margin-left: auto; /* Aligns the label to the right */
+  }
