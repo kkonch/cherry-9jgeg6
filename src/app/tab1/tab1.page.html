@@ -1,5 +1,6 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <ion-header [translucent]="true">
@@ -9,7 +10,7 @@
       <ion-title>
         <div class="cherry-logo">
           <ion-img id="cherry-icon" src="assets/icon/cherry.png"></ion-img>
-          <ion-label>C H E R R Y</ion-label>
+          <ion-label class="cherry-label">C H E R R Y</ion-label>
         </div>
       </ion-title>
     </div>
@@ -17,4 +18,34 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  
+  <div class="key">
+    <ion-grid class="cycle-types">
+      <ion-row>
+        <ion-col size="2" class="menstruation-color"></ion-col>
+        <ion-col size="9">
+          <ion-label class="menstruation">Menstruation</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="ovulation-color"></ion-col>
+        <ion-col size="9">
+          <ion-label class="ovulation">Ovulation</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="follicular-color"></ion-col>
+        <ion-col size="9">
+          <ion-label class="follicular">Follicular</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2" class="luteal-color"></ion-col>
+        <ion-col size="9">
+          <ion-label class="luteal">Luteal</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
 </ion-content>

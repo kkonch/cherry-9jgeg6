@@ -6,6 +6,12 @@
 }
 
 ion-label {
+    font-family: 'Inter';
+    color: #0E103D;
+    font-size: 18px;
+}
+
+.cherry-label {
     font-family: 'Cherry Bomb';
     color: #84012A;
     font-size: 30px;
@@ -34,4 +40,53 @@ ion-title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.key {
+    width: 93%;
+    height: 25%;
+    border-radius: 10px;
+    margin: 3%;
+    background-color: #FFFEEA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cycle-types {
+    padding-top: 7%;
+    width: 80%;
+    margin-left: 3%;
+}
+
+ion-row {
+    display: block;
+}
+
+ion-col {
+    display: inline-block;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menstruation-color, .ovulation-color, .follicular-color, .luteal-color{
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.menstruation-color {
+    background-color: #84012A;
+}
+
+.ovulation-color {
+    background-color: #4F5172;
+}
+
+.follicular-color {
+    background-color: #989FC7;
+}
+
+.luteal-color {
+    background-color: #282749;
 }
