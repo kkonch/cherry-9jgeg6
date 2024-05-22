@@ -11,7 +11,7 @@
     font-size: 30px;
 }
 
-.cherry-logo, ion-toolbar, .header-content {
+.cherry-logo, ion-toolbar, .header-content, .message-info, .learn-more {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,4 +34,41 @@ ion-title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.message-box {
+    width: 93%;
+    height: 10%;
+    border-radius: 10px;
+    margin: 3%;
+    background-color: #FFFEEA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+ion-label {
+    font-family: 'Inter';
+    color: #630F0F;
+    font-size: 18px;
+}
+
+.message-info {
+    padding-top: 15px;
+    font-size: 16px;
+
+}
+
+.learn-more {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.information-box {
+    width: 93%;
+    height: 85%;
+    border-radius: 10px;
+    margin: 3%;
+    background-color: #0E103D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: block;
 }
