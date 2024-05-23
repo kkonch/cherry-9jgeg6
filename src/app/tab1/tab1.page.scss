@@ -97,4 +97,24 @@
     margin-left: auto; /* Aligns the label to the right */
   }
 
-  
+  .body-text-format{
+    p{
+      font-family: 'Inter';
+      color: #0E103D;
+      font-size: 20px;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  }
+
+  .phase-format{
+    p{
+      margin-top: 10px;
+      font-family: 'Inter';
+      color: #84012A;
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
