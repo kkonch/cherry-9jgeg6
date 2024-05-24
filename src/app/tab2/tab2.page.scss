@@ -3,41 +3,84 @@
     color: #0E103D;
     font-size: 50px;
     margin-right: 330px;
-}
-
-ion-label {
+  }
+  
+  ion-label {
     font-family: 'Inter';
     color: #0E103D;
     font-size: 18px;
   }
-
-.cherry-label {
+  
+  .cherry-label {
     font-family: 'Cherry Bomb';
     color: #84012A;
     font-size: 30px;
-}
-
-.cherry-logo, ion-toolbar, .header-content {
+  }
+  
+  .cherry-logo, ion-toolbar, .header-content {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#cherry-icon {
+  }
+  
+  #cherry-icon {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-}
-
-ion-toolbar {
+  }
+  
+  ion-toolbar {
     padding: 0;
     min-height: 80px;
     --background: #D3EDF9;
     border-bottom: 1px solid #959EC9;
-}
-
-ion-title {
+  }
+  
+  ion-title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
+  }
+  
+  ion-content {
+    display: flex;
+    justify-content: center; /* Horizontally centers the container */
+    align-items: center;     /* Vertically centers the container */
+    height: 100vh;           /* Ensures the content takes full height of the viewport */
+  }
+  
+  .calendar-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the ion-datetime */
+    align-items: center;     /* Vertically centers the ion-datetime */
+    width: 100%;             /* Optional: makes the container full width */
+    height: 100%;            /* Optional: makes the container full height */
+  }
+  
+  ion-datetime {
+    --background: #28264a;           /* Background color of the calendar */
+    --color: #ffffff;                /* Text color */
+    --picker-background: #ffffff;    /* Background color of the picker */
+    --picker-color: #333;            /* Text color of the picker */
+    --highlight-color-focused: #007bff;  /* Color of the highlighted/focused items */
+    --highlight-background: #007bff;     /* Background color of the highlighted/focused items */
+    --highlight-color: #ffffff;      /* Text color of the highlighted/focused items */
+  
+    /* Custom properties for the month and year title */
+    --header-background: #ffffff00;    /* Transparent background for the header */
+    --header-color: #ffffff;           /* Text color of the header */
+    --month-year-background: #28264a;  /* Background color of the month/year section */
+    --month-year-color: #ffffff;       /* Text color of the month/year section */
+  
+    /* Additional styling for the month/year title */
+    .datetime-month-year {
+      color: var(--month-year-color); /* Text color of the month/year title */
+      background: var(--month-year-background); /* Background color of the month/year title */
+    }
+  
+    /* Styling for the day number text */
+    .calendar-day {
+      color: #ffffff; /* Example color for day numbers */
+    }
+  }
+  
