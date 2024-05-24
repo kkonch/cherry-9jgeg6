@@ -11,7 +11,7 @@
     font-size: 30px;
 }
 
-.cherry-logo, ion-toolbar, .header-content, .message-info, .learn-more {
+.cherry-logo, ion-toolbar, .header-content, .message-info, .learn-more, .phase {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,14 +53,18 @@ ion-label {
 }
 
 .message-info {
-    padding-top: 15px;
+    padding-top: 10px;
     font-size: 16px;
+}
 
+.phase {
+    padding-top: 5px;
+    font-size: 16px;
 }
 
 .learn-more {
     font-size: 12px;
-    margin-bottom: 30px;
+    padding-top: 5px;
 }
 
 .information-box {

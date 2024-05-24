@@ -1,10 +1,5 @@
 export class PhaseData {
-    public static phase_type = [undefined,
-        'Menstrual Phase',
-        'Ovulation Phase',
-        'Follicular Phase',
-        'Luteal Phase'
-    ];
+    phaseName: String = 'undefined';
 
     public static menstrual = [
         'It\'s common to feel more sensitive or irritable during this time. Engaging in stress-reducing activities like meditation can help manage mood fluctuations.',
@@ -34,8 +29,9 @@ export class PhaseData {
         'It’s normal to feel sluggish, fatigued, and drops in energy as well increased cravings for carbohydrates and sweets, which can impact energy levels and mood. Keep yourself hydrated, sleep, and practice stress management techniques to keep yourself regulated!'
     ];
 
-    constructor() {
-        
+    constructor(date: Date, symptoms: string[]) {
+        if (symptoms[0] != 'none')
+            this.phaseName = 'Menstrual';
     }
 
 }
