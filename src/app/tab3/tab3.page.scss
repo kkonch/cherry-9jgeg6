@@ -89,13 +89,33 @@ ion-label {
     border-color: #84012A;
     border-radius: 20px;
     transition: 1s;
-    flex: small;
+    flex: small;    
+    position: relative; // Establish a positioning context
 }
 
+.Mood, .Exercise, .Diet, .Energy {
+    font-family: 'Cherry Bomb';
+    font-size: 40px;
+    width: 90%;
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mood-container:hover .Mood,
+.exercise-container:hover .Exercise,
+.diet-container:hover .Diet,
+.energy-container:hover .Energy {
+    opacity: 0;
+}
 
 .mood-text, .exercise-text, .diet-text, .energy-text {
     width: 90%;
     opacity: 0;
+    z-index: 1;
+    position: absolute;
     text-align: center;
     transition: opacity 0.5s ease-in-out;
 }
