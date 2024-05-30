@@ -4,7 +4,7 @@ export class PhaseData {
     public static menstrual = [
         'It\'s common to feel more sensitive or irritable during this time. Engaging in stress-reducing activities like meditation can help manage mood fluctuations.',
         'Some individuals may feel fatigued during their menstrual phase, others may find exercise beneficial for managing symptoms like cramps and bloating.',
-        'Foods rich in antioxidants, such as berries, dark chocolate, nuts, and colorful fruits and vegetables, can be incorporated into your diet to support overall health and well-being during menstruation. ',
+        'Foods rich in antioxidants, such as berries, dark chocolate, nuts, and colorful fruits and vegetables, can be incorporated into your diet to support overall health and well-being during menstruation.',
         'Hormonal fluctuations during the menstrual phase can impact energy levels, leading to feelings of fatigue or lethargy. Gentle activities like stretching or short walks can also boost energy without adding additional strain. The best exercise during your period is one that feels good to you!'
     ];
 
@@ -19,7 +19,7 @@ export class PhaseData {
         'Engaging in activities that promote mental well-being, such as yoga, meditation, or creative hobbies, can help harness these positive emotions and support overall mood stability during this phase.',
         'Focus on activities that you enjoy and that challenge different muscle groups, such as strength training, cardio workouts, yoga, or dance classes.',
         'Aim to include a variety of nutrient-dense foods in your meals, such as fruits, vegetables, whole grains, lean proteins, and healthy fats.',
-        'The follicular phase is typically associated with increasing energy levels and a sense of vitality as estrogen levels rise. Prioritize staying hydrated, getting enough sleep, and fueling your body with balanced meals. '
+        'The follicular phase is typically associated with increasing energy levels and a sense of vitality as estrogen levels rise. Prioritize staying hydrated, getting enough sleep, and fueling your body with balanced meals.'
     ];
 
     public static luteal = [

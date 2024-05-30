@@ -14,7 +14,6 @@ export class PhaseService {
 
     constructor() {
         this.addDefaultData();
-        console.log(PhaseService.data);
     }
 
     private addDefaultData() {
