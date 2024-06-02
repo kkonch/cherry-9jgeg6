@@ -17,7 +17,7 @@ export class PhaseService {
     }
 
     private addDefaultData() {
-        this.addPhaseSymptom(new PhaseData(new Date('May 23, 2024 05:14:00'), ['light', 'worried', 'running', 'average', 'vegan']));
+        this.addPhaseSymptom(new PhaseData(new Date('May 23, 2024 05:14:00'), ['none', 'worried', 'running', 'average', 'vegan']));
     }
 
     async addPhaseSymptom(phaseData: PhaseData) {

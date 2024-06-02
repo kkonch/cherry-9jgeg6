@@ -1,5 +1,6 @@
 export class PhaseData {
-    phaseName: String = 'undefined';
+    phaseName: string = 'undefined';
+    phaseInfo: string[] = [];
 
     public static menstrual = [
         'It\'s common to feel more sensitive or irritable during this time. Engaging in stress-reducing activities like meditation can help manage mood fluctuations.',
@@ -32,6 +33,11 @@ export class PhaseData {
     constructor(date: Date, symptoms: string[]) {
         if (symptoms[0] != 'none')
             this.phaseName = 'Menstrual';
+
+        this.phaseName = 'Ovulating';
+
+        if (this.phaseName == 'Ovulating')
+            this.phaseInfo = PhaseData.ovulation;
     }
 
 }
