@@ -1,5 +1,7 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
+import { PhaseService } from '../services/phase-service';
+
 
 @Component({
   selector: 'app-tab1',
@@ -11,8 +13,12 @@ import { Chart, registerables } from 'chart.js';
 export class Tab1Page {
   // @ViewChild('doughnutCanvas') doughnutCanvas!: ElementRef<HTMLCanvasElement>;
   // doughnutChart: any;
+  currentDate: Date;
+  phaseName: string = '?';
 
-  constructor() {
+  constructor(private phaseService: PhaseService) {
+    this.currentDate = new Date();
+    this.phaseName = this.phaseService.allPhaseData()[0].phaseName;
     // Chart.register(...registerables);
   }
 
