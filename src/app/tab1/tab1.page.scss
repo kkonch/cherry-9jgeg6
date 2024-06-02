@@ -39,22 +39,34 @@
   ion-title {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content to the start (left) */
-    padding-left: 90px; /* Increase padding to adjust the position */
+    justify-content: flex-start;
+    padding-left: 90px;
   }
   
-  .key {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .key-container, .date-container, .donut-chart-container {
     width: 93%;
-    height: 25%;
     border-radius: 10px;
-    margin: 3%;
-    background-color: #FFFEEA;
+    margin: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .key-container {
+    height: 23%;
+    border-radius: 10px;
+    background-color: #FFFEEA;
   }
   
   .cycle-types {
-    padding-top: 7%;
-    width: 80%;
+    padding-top: 3%;
+    width: 95%;
     margin-left: 3%;
   }
   
@@ -69,6 +81,15 @@
     justify-content: center;
   }
   
+  ion-row:first-of-type ion-col:nth-of-type(3) {
+    text-align: right;
+}
+
+  .key-text {
+    font-size: 25px;
+    color: #282749;
+  }
+
   .menstruation-color, .ovulation-color, .follicular-color, .luteal-color {
     width: 60px;
     height: 25px;
@@ -91,30 +112,42 @@
   .luteal-color {
     background-color: #282749;
   }
-  .align-top {
-    align-self: flex-start; /* Aligns content to the top */
-    margin-top: -50px; /* Adjust this value to move the label higher */
-    margin-left: auto; /* Aligns the label to the right */
+  
+  .date-container {
+    height: 10%;
+    background-color: #282749;
+
   }
 
-  .body-text-format{
-    p{
-      font-family: 'Inter';
-      color: #0E103D;
-      font-size: 20px;
-      text-align: center;
-      margin-top: 10px;
-      margin-bottom: 0px;
-    }
+  .donut-chart-container {
+    height: 66%;
+    background-color: #F5F5F5;
   }
 
-  .phase-format{
-    p{
-      margin-top: 10px;
-      font-family: 'Inter';
-      color: #84012A;
-      font-size: 25px;
-      text-align: center;
-      margin-bottom: 5px;
-    }
-  }
+  // .align-top {
+  //   align-self: flex-start; /* Aligns content to the top */
+  //   margin-top: -50px; /* Adjust this value to move the label higher */
+  //   margin-left: auto; /* Aligns the label to the right */
+  // }
+
+  // .body-text-format{
+  //   p{
+  //     font-family: 'Inter';
+  //     color: #0E103D;
+  //     font-size: 20px;
+  //     text-align: center;
+  //     margin-top: 10px;
+  //     margin-bottom: 0px;
+  //   }
+  // }
+
+  // .phase-format{
+  //   p{
+  //     margin-top: 10px;
+  //     font-family: 'Inter';
+  //     color: #84012A;
+  //     font-size: 25px;
+  //     text-align: center;
+  //     margin-bottom: 5px;
+  //   }
+  // }
