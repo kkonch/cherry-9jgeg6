@@ -90,7 +90,7 @@ ion-label {
     border-radius: 20px;
     transition: 1s;
     flex: small;    
-    position: relative; // Establish a positioning context
+    position: relative;
 }
 
 .Mood, .Exercise, .Diet, .Energy {
@@ -104,13 +104,6 @@ ion-label {
     transition: opacity 0.5s ease-in-out;
 }
 
-.mood-container:hover .Mood,
-.exercise-container:hover .Exercise,
-.diet-container:hover .Diet,
-.energy-container:hover .Energy {
-    opacity: 0;
-}
-
 .mood-text, .exercise-text, .diet-text, .energy-text {
     width: 90%;
     opacity: 0;
@@ -120,15 +113,18 @@ ion-label {
     transition: opacity 0.5s ease-in-out;
 }
 
-.mood-container:hover .mood-text,
-.exercise-container:hover .exercise-text,
-.diet-container:hover .diet-text,
-.energy-container:hover .energy-text {
-    opacity: 1;
-}
-
 .mood-container:hover, .exercise-container:hover, .diet-container:hover, .energy-container:hover {
     height: 40%;
     transition: 1s;
     flex: small;
+
+    .Mood, .Exercise, .Diet, .Energy {
+        opacity: 0;
+    }
+
+    .mood-text, .exercise-text,
+    .diet-text, .energy-text {
+        opacity: 1;
+    }
+
 }
