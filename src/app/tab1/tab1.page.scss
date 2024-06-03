@@ -124,23 +124,38 @@
 
   .donut-chart-container {
     height: 66%;
+    position: relative;
     background-color: #F5F5F5;
     flex-direction: column;
   }
-
+  
   .announce-text {
     color: #0E103D;
-    font-size: 20px;
+    font-size: 23px;
+    margin-top: 5%;
     margin-bottom: -10px;
   }
-
+  
   .phase-name {
     color: #84012A;
-    font-size: 25px;
+    font-size: 28px;
     margin-top: -5px;
   }
-
+  
+  .countdown {
+    top: 49%;
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    z-index: 2;
+  }
+  
   .donut {
     max-width: 350px;
     height: auto;
+    z-index: 1;
+    margin-top: -10px;
   }
+
+
+  
