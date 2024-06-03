@@ -43,10 +43,10 @@ export class Tab1Page implements AfterViewInit {
               '#282749',
             ],
             hoverBackgroundColor: [
-              '#4a0017',
-              '#33344a',
-              '#737893',
-              '#10101d',
+              '#D50043',
+              '#37338C',
+              '#4A74D5',
+              '#0612A7',
             ]
           }]
         }, 
