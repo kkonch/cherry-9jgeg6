@@ -33,7 +33,6 @@ export class Tab1Page implements AfterViewInit {
       this.doughnutChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
-          labels: ['Menstruation', 'Ovulation', 'Follicular', 'Luteal'],
           datasets: [{
             label: '# of days',
             data: [7, 7, 10, 4],
@@ -50,6 +49,9 @@ export class Tab1Page implements AfterViewInit {
               '#10101d',
             ]
           }]
+        }, 
+        options: {
+          cutout: '70%'
         }
       });
     }
