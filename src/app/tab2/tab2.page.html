@@ -13,8 +13,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="calender-container">
-    <ion-datetime></ion-datetime>
+  <div class="calendar-container">
+    <div class="sync-message">
+      <p>Sync you tracker app</p>
+    </div>
+    <ion-button>Sync</ion-button>
+    <ion-label class="or">or</ion-label>
+    <div class="select-message">
+      <p>Select the day you wish to input your information</p>
+    </div>
+    <ion-label class="start-date">S T A R T&nbsp;&nbsp;&nbsp;&nbsp;D A T E</ion-label>
+    <ion-datetime presentation="date" [showDefaultButtons]="true"></ion-datetime>
   </div>
   
 </ion-content>

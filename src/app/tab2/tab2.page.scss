@@ -5,19 +5,19 @@
     margin-right: 330px;
   }
   
-  ion-label {
+  ion-label, p {
     font-family: 'Inter';
-    color: #0E103D;
+    color: #630F0F;
     font-size: 18px;
   }
-  
-  .cherry-label {
+
+  .cherry-label, .or, .start-date {
     font-family: 'Cherry Bomb';
     color: #84012A;
     font-size: 30px;
   }
   
-  .cherry-logo, ion-toolbar, .header-content {
+  .cherry-logo, ion-toolbar, .header-content, .calendar-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,46 +41,63 @@
     align-items: center;
     justify-content: flex-start;
   }
-  
-  ion-content {
-    display: flex;
-    justify-content: center; /* Horizontally centers the container */
-    align-items: center;     /* Vertically centers the container */
-    height: 100vh;           /* Ensures the content takes full height of the viewport */
-  }
-  
+
   .calendar-container {
-    display: flex;
-    justify-content: center; /* Horizontally centers the ion-datetime */
-    align-items: center;     /* Vertically centers the ion-datetime */
-    width: 100%;             /* Optional: makes the container full width */
-    height: 100%;            /* Optional: makes the container full height */
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
   }
   
-  ion-datetime {
-    --background: #28264a;           /* Background color of the calendar */
-    --color: #ffffff;                /* Text color */
-    --picker-background: #ffffff;    /* Background color of the picker */
-    --picker-color: #333;            /* Text color of the picker */
-    --highlight-color-focused: #007bff;  /* Color of the highlighted/focused items */
-    --highlight-background: #007bff;     /* Background color of the highlighted/focused items */
-    --highlight-color: #ffffff;      /* Text color of the highlighted/focused items */
-  
-    /* Custom properties for the month and year title */
-    --header-background: #ffffff00;    /* Transparent background for the header */
-    --header-color: #ffffff;           /* Text color of the header */
-    --month-year-background: #28264a;  /* Background color of the month/year section */
-    --month-year-color: #ffffff;       /* Text color of the month/year section */
-  
-    /* Additional styling for the month/year title */
-    .datetime-month-year {
-      color: var(--month-year-color); /* Text color of the month/year title */
-      background: var(--month-year-background); /* Background color of the month/year title */
-    }
-  
-    /* Styling for the day number text */
-    .calendar-day {
-      color: #ffffff; /* Example color for day numbers */
-    }
-  }
-  
+  .sync-message, .select-message {
+    text-align: center;
+    border-radius: 10px;
+    margin: 3%;
+    background-color: #FFFEEA;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.sync-message {
+  width: 50%;
+  height: 60px;
+  margin-top: -2%;
+}
+
+ion-button {
+  width: 100px;
+  display: block;
+  --color: black;
+  --background: #989FC7;
+  --background-activated: #84012A;
+  --box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.or {
+  margin: 3%;
+}
+
+.select-message {
+  width: 93%;
+  height: 80px;
+}
+
+.start-date {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+ion-datetime {
+  --background: #989FC7;
+  margin: 3%;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+
+  --ion-color-primary: #84012A;
+  --ion-color-step-300: black;
+
+}
+
+ion-datetime::part(calendar-day):focus {
+  background-color: rgba(255, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 4px rgba(255, 100, 149, 0.2);
+}
