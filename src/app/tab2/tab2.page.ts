@@ -1,13 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { InfiniteScrollCustomEvent } from '@ionic/angular';
+import { PhaseData } from '../data/phase-data';
 
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
+
 export class Tab2Page implements OnInit {
   items: any  = [];
+  periodItems: { name: string, img: string }[] = PhaseData.periodItems;
+  painItems: { name: string, img: string }[] = PhaseData.painItems;
+  moodItems: { name: string, img: string }[] = PhaseData.moodItems;
+  dietItems: { name: string, img: string }[] = PhaseData.dietItems;
+  exerciseItems: { name: string, img: string }[] = PhaseData.exerciseItems;
+  energyItems: { name: string, img: string }[] = PhaseData.energyItems;
 
   ngOnInit(): void {
 

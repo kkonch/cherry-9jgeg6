@@ -30,6 +30,60 @@ export class PhaseData {
         'It’s normal to feel sluggish, fatigued, and drops in energy as well increased cravings for carbohydrates and sweets, which can impact energy levels and mood. Keep yourself hydrated, sleep, and practice stress management techniques to keep yourself regulated!'
     ];
 
+    public static periodItems = [
+        { name: 'None', img: 'assets/images/none.png' },
+        { name: 'Light', img: 'assets/images/light.png' },
+        { name: 'Medium', img: 'assets/images/medium.png' },
+        { name: 'Heavy', img: 'assets/images/heavy.png' },
+        { name: 'Very Heavy', img: 'assets/images/super-heavy.png' }
+      ];
+
+      public static painItems = [
+        { name: 'Cramps', img: 'assets/images/cramps.png' },
+        { name: 'Joint Pain', img: 'assets/images/joint-pain.png' },
+        { name: 'Head Pain', img: 'assets/images/head-pain.png' },
+        { name: 'Back Pain', img: 'assets/images/back-pain.png' },
+        { name: 'Breast Pain', img: 'assets/images/breast-pain.png' }
+      ];
+
+      public static moodItems = [
+        { name: 'Happy', img: 'assets/images/happy.png' },
+        { name: 'Sad', img: 'assets/images/sad.png' },
+        { name: 'Angry', img: 'assets/images/angry.png' },
+        { name: 'Worried', img: 'assets/images/worried.png' },
+        { name: 'Loving', img: 'assets/images/loving.png' },
+        { name: 'Confused', img: 'assets/images/confused.png' },
+        { name: 'Mixed', img: 'assets/images/mixed.png' }
+      ];
+
+      public static exerciseItems = [
+        { name: 'Rest Day', img: 'assets/images/rest-day.png' },
+        { name: 'Running', img: 'assets/images/running.png' },
+        { name: 'Yoga', img: 'assets/images/yoga.png' },
+        { name: 'Swimming', img: 'assets/images/swimming.png' },
+        { name: 'Hiking', img: 'assets/images/hiking.png' },
+        { name: 'Strength', img: 'assets/images/weightlifting.png' }
+      ];
+
+      public static dietItems = [
+        { name: 'Vegan', img: 'assets/images/vegan.png' },
+        { name: 'Carnivore', img: 'assets/images/carnivore.png' },
+        { name: 'Junk Food', img: 'assets/images/junk-food.png' },
+        { name: 'Carbs', img: 'assets/images/carbohydrate.png' },
+        { name: 'Pescatarian', img: 'assets/images/pescatarian.png' },
+        { name: 'Balanced', img: 'assets/images/balanced.png' },
+        { name: 'Random', img: 'assets/images/random.png' }
+      ];
+
+      public static energyItems = [
+        { name: 'Exhausted', img: 'assets/images/exhausted.png' },
+        { name: 'Tired', img: 'assets/images/tired.png' },
+        { name: 'Average', img: 'assets/images/average.png' },
+        { name: 'High', img: 'assets/images/high.png' },
+        { name: 'Energetic', img: 'assets/images/energetic.png' },
+        { name: 'Hyper', img: 'assets/images/hyper.png' }
+      ];
+
     constructor(date: Date, symptoms: string[]) {
         if (symptoms[0] != 'none')
             this.phaseName = 'Menstrual';

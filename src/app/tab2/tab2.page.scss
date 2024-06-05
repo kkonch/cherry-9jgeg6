@@ -82,6 +82,12 @@ ion-button {
 .select-message {
   width: 93%;
   height: 80px;
+
+  p {
+    padding-left: 35px;
+    width: 90%;
+  }
+
 }
 
 .start-date {
@@ -108,7 +114,7 @@ ion-datetime::part(calendar-day):focus {
 #main-symptoms-container {
   flex-direction: column;
   height: 140vh;
-  overflow: hidden; // Prevent any overflow from the main container
+  overflow: hidden;
 }
 
 .symptoms-message {
@@ -119,7 +125,7 @@ ion-datetime::part(calendar-day):focus {
   background-color: #FFFEEA;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   flex-direction: column;
-  flex-shrink: 0; // Prevent shrinking
+  flex-shrink: 0;
 }
 
 .symptoms-text {
@@ -140,7 +146,7 @@ ion-datetime::part(calendar-day):focus {
   display: flex;
   flex-direction: column;
   z-index: 1;
-  overflow-y: auto; // Enable vertical scroll if content overflows
+  overflow-y: auto;
 }
 
 .symptoms-options {
@@ -156,11 +162,12 @@ ion-datetime::part(calendar-day):focus {
     height: 200px;
     background-color: #F5F5F5;
     border-radius: 10px;
-    display: block;
-    margin: 10px auto; // Center the divs horizontally
-    overflow-x: auto; // Enable horizontal scroll if content overflows
-    overflow-y: hidden; // Disable vertical scroll
-    white-space: nowrap; // Prevent text from wrapping
+    margin: 10px auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -201,4 +208,41 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-left: 10px;
+}
+
+.item {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #A22B05;
+  border-radius: 10px;
+  background-color: #FFFEEA;
+  text-align: center;
+  margin: 7px;
+  transition: background-color 0.3s;
+}
+
+.item-image {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.item span {
+  display: block;
+  margin-top: 5px;
+  font-family: 'Cherry Bomb';
+  color: #84012A;
+}
+
+.item:hover {
+  color: #A22B05;
+  background-color: #959EC9;
+
+  span {
+    color: #A22B05;
+  }
 }

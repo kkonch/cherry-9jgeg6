@@ -20,7 +20,7 @@
     <ion-button>Sync</ion-button>
     <ion-label class="or">or</ion-label>
     <div class="select-message">
-      <p>Select the day you wish to input your information</p>
+      <p>Please select the day you had your last period!</p>
     </div>
     <ion-label class="start-date">S T A R T&nbsp;&nbsp;&nbsp;&nbsp;D A T E</ion-label>
     <ion-datetime 
@@ -32,7 +32,7 @@
     </ion-datetime>
   </div>
 
-  <div id="main-symptoms-container" style="display: none;">
+  <div id="main-symptoms-container" style="display: flex;">
     <div class="symptoms-message">
       <ion-label class="symptoms-text">Select your symptoms with the available choices</ion-label>
       <ion-label class="learn-more">learn more below</ion-label>
@@ -40,55 +40,66 @@
 
     <div id="symptoms-container">
       <div class="symptoms-options">
-
         <div class="heading">
           <h1>Period</h1>
           <div class="circle">i</div>
         </div>
-          <div id="period">
-            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <div id="period">
+          <div *ngFor="let item of periodItems" class="item">
+            <img [src]="item.img" alt="{{ item.name }}" class="item-image">
+            <span>{{ item.name }}</span>
           </div>
-
+        </div>
         <div class="heading">
           <h1>Pain</h1>
           <div class="circle">i</div>
         </div>
-          <div id="pain">
-
+        <div id="pain">
+          <div *ngFor="let item of painItems" class="item">
+            <img [src]="item.img" alt="{{ item.name }}" class="item-image">
+            <span>{{ item.name }}</span>
           </div>
-
+        </div>
         <div class="heading">
           <h1>Mood</h1>
           <div class="circle">i</div>
         </div>
           <div id="mood">
-
+            <div *ngFor="let item of moodItems" class="item">
+              <img [src]="item.img" alt="{{ item.name }}" class="item-image">
+              <span>{{ item.name }}</span>
+            </div>
           </div>
-
         <div class="heading">
           <h1>Exercise</h1>
           <div class="circle">i</div>
         </div>
           <div id="exercise">
-
+            <div *ngFor="let item of exerciseItems" class="item">
+              <img [src]="item.img" alt="{{ item.name }}" class="item-image">
+              <span>{{ item.name }}</span>
+            </div>
           </div>
-
         <div class="heading">
           <h1>Diet</h1>
           <div class="circle">i</div>
         </div>
           <div id="diet">
-
+            <div *ngFor="let item of dietItems" class="item">
+              <img [src]="item.img" alt="{{ item.name }}" class="item-image">
+              <span>{{ item.name }}</span>
+            </div>
           </div>
-
         <div class="heading">
           <h1>Energy</h1>
           <div class="circle">i</div>
         </div>
           <div id="energy">
-            
+            <div *ngFor="let item of energyItems" class="item">
+              <img [src]="item.img" alt="{{ item.name }}" class="item-image">
+              <span>{{ item.name }}</span>
+            </div>
           </div>
-        
       </div>
     </div>
 
