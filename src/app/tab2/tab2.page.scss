@@ -1,60 +1,62 @@
 .menu-icon {
-    display: flex;
-    color: #0E103D;
-    font-size: 50px;
-    margin-right: 330px;
-  }
+  display: flex;
+  color: #0E103D;
+  font-size: 50px;
+  margin-right: 330px;
+}
   
-  ion-label, p {
-    font-family: 'Inter';
-    color: #630F0F;
-    font-size: 18px;
-  }
+ion-label, p {
+  font-family: 'Inter';
+  color: #630F0F;
+  font-size: 18px;
+}
 
-  .cherry-label, .or, .start-date {
-    font-family: 'Cherry Bomb';
-    color: #84012A;
-    font-size: 30px;
-  }
-  
-  .cherry-logo, ion-toolbar, .header-content, .calendar-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #cherry-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  ion-toolbar {
-    padding: 0;
-    min-height: 80px;
-    --background: #D3EDF9;
-    border-bottom: 1px solid #959EC9;
-  }
-  
-  ion-title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
+.cherry-label, .or, .start-date {
+  font-family: 'Cherry Bomb';
+  color: #84012A;
+  font-size: 30px;
+}
 
-  .calendar-container {
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-  }
-  
-  .sync-message, .select-message {
-    text-align: center;
-    border-radius: 10px;
-    margin: 3%;
-    background-color: #FFFEEA;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    display: block;
+.cherry-logo, ion-toolbar, .header-content, #calendar-container,
+#symptoms-container, .symptoms-message, .symptoms-text, .learn-more,
+.buttons, #main-symptoms-container, .symptoms-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cherry-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+ion-toolbar {
+  padding: 0;
+  min-height: 80px;
+  --background: #D3EDF9;
+  border-bottom: 1px solid #959EC9;
+}
+
+ion-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#calendar-container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.sync-message, .select-message {
+  text-align: center;
+  border-radius: 10px;
+  margin: 3%;
+  background-color: #FFFEEA;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: block;
 }
 
 .sync-message {
@@ -66,6 +68,7 @@
 ion-button {
   width: 100px;
   display: block;
+  font-size: 18px;
   --color: black;
   --background: #989FC7;
   --background-activated: #84012A;
@@ -100,4 +103,102 @@ ion-datetime {
 ion-datetime::part(calendar-day):focus {
   background-color: rgba(255, 0, 0, 0.2);
   box-shadow: 0px 0px 0px 4px rgba(255, 100, 149, 0.2);
+}
+
+#main-symptoms-container {
+  flex-direction: column;
+  height: 140vh;
+  overflow: hidden; // Prevent any overflow from the main container
+}
+
+.symptoms-message {
+  width: 93%;
+  height: 7%;
+  border-radius: 10px;
+  margin: 3%;
+  background-color: #FFFEEA;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex-direction: column;
+  flex-shrink: 0; // Prevent shrinking
+}
+
+.symptoms-text {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.learn-more {
+  font-size: 10px;
+  padding-top: 14px;
+}
+
+#symptoms-container {
+  width: 93%;
+  background-color: #0E103D;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  overflow-y: auto; // Enable vertical scroll if content overflows
+}
+
+.symptoms-options {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+
+  #period, #pain, #mood,
+  #exercise, #diet, #energy {
+    width: 90%;
+    height: 200px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto; // Center the divs horizontally
+    overflow-x: auto; // Enable horizontal scroll if content overflows
+    overflow-y: hidden; // Disable vertical scroll
+    white-space: nowrap; // Prevent text from wrapping
+  }
+}
+
+.buttons {
+  margin: 10px;
+}
+
+#back {
+  margin-right: 75px;
+}
+
+#done {
+  margin-left: 75px;
+}
+
+.heading {
+  width: 100%;
+  height: 70px;
+  display: block;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  color: #F5F5F5;
+  font-size: 25px;
+  display: inline-flex;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #FFFEEA;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
 }

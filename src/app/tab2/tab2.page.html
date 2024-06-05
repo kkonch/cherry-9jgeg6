@@ -12,10 +12,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="calendar-container">
+<ion-content>
+  <div id="calendar-container" style="display: flex;">
     <div class="sync-message">
-      <p>Sync you tracker app</p>
+      <p>Sync your tracker app</p>
     </div>
     <ion-button>Sync</ion-button>
     <ion-label class="or">or</ion-label>
@@ -23,7 +23,79 @@
       <p>Select the day you wish to input your information</p>
     </div>
     <ion-label class="start-date">S T A R T&nbsp;&nbsp;&nbsp;&nbsp;D A T E</ion-label>
-    <ion-datetime presentation="date" [showDefaultButtons]="true"></ion-datetime>
+    <ion-datetime 
+      presentation="date"
+      doneText="Confirm" 
+      [showDefaultButtons]="true" 
+      (ionChange)="sectionChange(1)"
+      (ionCancel)="handleCancel()">
+    </ion-datetime>
+  </div>
+
+  <div id="main-symptoms-container" style="display: none;">
+    <div class="symptoms-message">
+      <ion-label class="symptoms-text">Select your symptoms with the available choices</ion-label>
+      <ion-label class="learn-more">learn more below</ion-label>
+    </div>
+
+    <div id="symptoms-container">
+      <div class="symptoms-options">
+
+        <div class="heading">
+          <h1>Period</h1>
+          <div class="circle">i</div>
+        </div>
+          <div id="period">
+            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+          </div>
+
+        <div class="heading">
+          <h1>Pain</h1>
+          <div class="circle">i</div>
+        </div>
+          <div id="pain">
+
+          </div>
+
+        <div class="heading">
+          <h1>Mood</h1>
+          <div class="circle">i</div>
+        </div>
+          <div id="mood">
+
+          </div>
+
+        <div class="heading">
+          <h1>Exercise</h1>
+          <div class="circle">i</div>
+        </div>
+          <div id="exercise">
+
+          </div>
+
+        <div class="heading">
+          <h1>Diet</h1>
+          <div class="circle">i</div>
+        </div>
+          <div id="diet">
+
+          </div>
+
+        <div class="heading">
+          <h1>Energy</h1>
+          <div class="circle">i</div>
+        </div>
+          <div id="energy">
+            
+          </div>
+        
+      </div>
+    </div>
+
+    <div class="buttons">
+      <ion-button id="back" (click)="sectionChange(2)" >Back</ion-button>
+      <ion-button id="Done">Done</ion-button>
+    </div>
   </div>
   
 </ion-content>
