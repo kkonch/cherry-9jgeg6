@@ -1,0 +1,94 @@
+ion-grid {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+ion-card {
+    width: 100%;
+    background-color: transparent; /* Transparent background */
+    --ion-background-color: transparent; /* Ensures background color is applied properly */
+    border-radius: 0px; /* No rounded corners */
+    box-shadow: none; /* No shadow */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+ion-item {
+    --background: #FFFEEA; /* White background for text fields */
+    border-radius: 8px; /* Optional: adds rounded corners to text fields */
+    height: 80px; /* Ensures the height is adjusted by padding */
+    // --padding-start: 12px; /* Adjust as needed */
+    // --padding-end: 12px; /* Adjust as needed */
+    // --padding-top: 6px; /* Adjust as needed */
+    // --padding-bottom: 6px; /* Adjust as needed */
+}
+
+  ion-card-header {
+    text-align: center; /* Center align the card header text */
+  }
+  
+  ion-card-title {
+    font-size: 1.5rem; /* Adjust the font size */
+  }
+  
+  
+
+  #cherry-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  ion-label {
+    font-family: 'Inter';
+    color: #0E103D;
+    font-size: 18px;
+  }
+  
+  .cherry-label {
+    font-family: 'Cherry Bomb';
+    color: #84012A;
+    font-size: 30px;
+  }
+  
+  ion-toolbar, .header-content, .main-container, .date-container,
+  .donut-chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.cherry-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px; /* Adjust as needed for spacing from the top */
+  }
+
+ion-content{
+    align-items: center;
+    justify-content: center;
+}
+
+ion-button {
+    margin-top: 20px; /* Adds some spacing above the button */
+    --background: #0E103D; /* Background color for the button */
+    --color: #ffffff; /* White text color */
+    height: 50px; /* Adjust height as needed */
+    font-size: 1rem; /* Adjust font size as needed */
+    border-radius: 8px; /* Adds rounded corners to the button */
+    width: 130px;
+    align-self: center;
+    align-items: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center elements inside the form */
+  }
