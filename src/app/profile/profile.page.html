@@ -1,4 +1,9 @@
-<ion-header [translucent]="true">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+  
+  <ion-header [translucent]="true">
     <ion-toolbar>
       <div class="header-content">
         <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
@@ -12,4 +17,34 @@
     </ion-toolbar>
   </ion-header>
   
-    
+  <ion-content>
+    <div class="pfp-img">
+      <ion-img src="https://cdn-icons-png.flaticon.com/512/3135/3135823.png"></ion-img>
+      <ion-label>First Name, Last Name</ion-label>
+    </div>
+      <ion-list>
+          <ion-item>
+            <ion-input label="Date of Birth" placeholder="Enter date"></ion-input>
+          </ion-item>
+  
+          <ion-item>
+            <ion-select label="Location" label-placement="fixed" placeholder="Select Location">
+              <ion-select-option value="United States">United States</ion-select-option>
+              <ion-select-option value="China">China</ion-select-option>
+              <ion-select-option value="India">India</ion-select-option>
+              <ion-select-option value="Russia">Russia</ion-select-option>
+            </ion-select>
+          </ion-item>
+  
+          <ion-item>
+            <ion-select label="Sexuality" label-placement="fixed" placeholder="Select Sexuality">
+              <ion-select-option value="Heterosexual">Heterosexual</ion-select-option>
+              <ion-select-option value="Homosexual">Homosexual</ion-select-option>
+              <ion-select-option value="Bisexual">Bisexual</ion-select-option>
+              <ion-select-option value="Pansexual">Pansexual</ion-select-option>
+              <ion-select-option value="Asexual">Asexual</ion-select-option>
+            </ion-select>
+          </ion-item>
+      </ion-list>
+  </ion-content>
+  

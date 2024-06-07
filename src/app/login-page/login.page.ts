@@ -22,9 +22,6 @@ export class LoginPage {
 
   onLogin() {
     if (this.loginForm.valid) {
-      // Perform login logic here if needed
-
-      // Navigate to tab1 page
       this.router.navigate(['/tab1']);
     }
   }
