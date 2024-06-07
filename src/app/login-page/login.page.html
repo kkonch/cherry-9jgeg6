@@ -2,41 +2,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   </head>
-
-<ion-header>
-    <ion-toolbar>
-      <ion-title>Login</ion-title>
-    </ion-toolbar>
-  </ion-header>
-<div class="cherry-logo">
-    <ion-label>Hi Welcome to</ion-label>
-    <ion-label class="cherry-label">C H E R R Y</ion-label>
-    <ion-img id="cherry-icon" src="assets/icon/cherry.png"></ion-img>
-</div>
-  <ion-content>
-    <ion-grid>
-      <ion-row justify-content-center>
-        <ion-col size-md="6" size-sm="12">
-          <ion-card>
-            <ion-card-header>
-              <ion-card-title>Login</ion-card-title>
-            </ion-card-header>
-            <ion-card-content>
-              <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
-                <ion-item>
-                  <ion-label position="floating">Email</ion-label>
-                  <ion-input formControlName="email" type="email"></ion-input>
-                </ion-item>
-                <ion-item>
-                  <ion-label position="floating">Password</ion-label>
-                  <ion-input formControlName="password" type="password"></ion-input>
-                </ion-item>
-                <ion-button expand="full" type="submit" (click)="onLogin()">Login</ion-button>
-              </form>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>
+  
+  <div class="content-center">
+    <div class="cherry-logo">
+      <ion-label>Hi Welcome to</ion-label>
+      <ion-label class="cherry-label">C H E R R Y</ion-label>
+      <ion-img id="cherry-icon" src="assets/icon/cherry.png"></ion-img>
+    </div>
+  
+    <ion-card>
+      <ion-card-header>
+        <ion-label justify-content-center><b>Login</b> to get started</ion-label>
+      </ion-card-header>
+      <ion-card-content>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input formControlName="email" type="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+          </ion-item>
+          <ion-button expand="full" type="submit">Login</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
   

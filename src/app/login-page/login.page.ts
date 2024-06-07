@@ -1,34 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class LoginPage implements OnInit {
-  loginForm!: FormGroup; // Use non-null assertion operator
+export class LoginPage {
+  loginForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private navCtrl: NavController) {}
-
-  ngOnInit() {
-    this.loginForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
+  constructor(
+    private formBuilder: FormBuilder,
+    private router: Router
+  ) {
+    this.loginForm = this.formBuilder.group({
+      email: ['', Validators.required],
+      password: ['', Validators.required]
     });
   }
 
   onLogin() {
-    const email = this.loginForm.get('email')!.value; // Use non-null assertion operator
-    const password = this.loginForm.get('password')!.value; // Use non-null assertion operator
+    if (this.loginForm.valid) {
+      // Perform login logic here if needed
 
-      // Perform login logic her
-    console.log("user", email)
-    console.log("pass", password)
-    console.log("HERRo")
-    console.log('Login successful', { email, password });
-    // Navigate to the tabs page after successful login
-    this.navCtrl.navigateForward('/tab1');
+      // Navigate to tab1 page
+      this.router.navigate(['/tab1']);
+    }
   }
 }
