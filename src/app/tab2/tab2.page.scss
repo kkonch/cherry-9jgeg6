@@ -238,7 +238,7 @@ h1 {
   color: #84012A;
 }
 
-.item:hover {
+.item.selected{
   color: #A22B05;
   background-color: #959EC9;
 
@@ -246,3 +246,7 @@ h1 {
     color: #A22B05;
   }
 }
+
+// span:hover {
+//   color: #A22B05;
+// }

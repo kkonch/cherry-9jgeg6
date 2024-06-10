@@ -15,6 +15,7 @@ export class Tab2Page implements OnInit {
   dietItems: { name: string, img: string }[] = PhaseData.dietItems;
   exerciseItems: { name: string, img: string }[] = PhaseData.exerciseItems;
   energyItems: { name: string, img: string }[] = PhaseData.energyItems;
+  selectedItems: { [key: string]: any } = {};
 
   ngOnInit(): void {
 
@@ -23,7 +24,6 @@ export class Tab2Page implements OnInit {
   constructor() {}
 
   sectionChange(num: number) {
-    console.log(1);
     const calendarContainer = document.getElementById("calendar-container");
     const mainSymptomsContainer = document.getElementById("main-symptoms-container");
 
@@ -34,8 +34,6 @@ export class Tab2Page implements OnInit {
           mainSymptomsContainer.style.display = "flex";
           break;
         case 2:
-          console.log(2);
-
           calendarContainer.style.display = "flex";
           mainSymptomsContainer.style.display = "none";
           break;
@@ -46,8 +44,9 @@ export class Tab2Page implements OnInit {
     }
   }
 
-  handleCancel() {
-    console.log(3);
+  selectItem(row: string, item: any) {
+    this.selectedItems[row] = item;
   }
+
 
 }

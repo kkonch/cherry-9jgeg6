@@ -27,8 +27,7 @@
       presentation="date"
       doneText="Confirm" 
       [showDefaultButtons]="true" 
-      (ionChange)="sectionChange(1)"
-      (ionCancel)="handleCancel()">
+      (ionChange)="sectionChange(1)">
     </ion-datetime>
   </div>
 
@@ -45,7 +44,7 @@
           <div class="circle">i</div>
         </div>
         <div id="period">
-          <div *ngFor="let item of periodItems" class="item">
+          <div *ngFor="let item of periodItems" class="item" (click)="selectItem('period', item)" [class.selected]="selectedItems['period'] === item">
             <img [src]="item.img" alt="{{ item.name }}" class="item-image">
             <span>{{ item.name }}</span>
           </div>
@@ -55,7 +54,7 @@
           <div class="circle">i</div>
         </div>
         <div id="pain">
-          <div *ngFor="let item of painItems" class="item">
+          <div *ngFor="let item of painItems" class="item" (click)="selectItem('pain', item)" [class.selected]="selectedItems['pain'] === item">
             <img [src]="item.img" alt="{{ item.name }}" class="item-image">
             <span>{{ item.name }}</span>
           </div>
@@ -65,7 +64,7 @@
           <div class="circle">i</div>
         </div>
           <div id="mood">
-            <div *ngFor="let item of moodItems" class="item">
+            <div *ngFor="let item of moodItems" class="item" (click)="selectItem('mood', item)" [class.selected]="selectedItems['mood'] === item">
               <img [src]="item.img" alt="{{ item.name }}" class="item-image">
               <span>{{ item.name }}</span>
             </div>
@@ -75,7 +74,7 @@
           <div class="circle">i</div>
         </div>
           <div id="exercise">
-            <div *ngFor="let item of exerciseItems" class="item">
+            <div *ngFor="let item of exerciseItems" class="item" (click)="selectItem('exercise', item)" [class.selected]="selectedItems['exercise'] === item">
               <img [src]="item.img" alt="{{ item.name }}" class="item-image">
               <span>{{ item.name }}</span>
             </div>
@@ -85,7 +84,7 @@
           <div class="circle">i</div>
         </div>
           <div id="diet">
-            <div *ngFor="let item of dietItems" class="item">
+            <div *ngFor="let item of dietItems" class="item" (click)="selectItem('diet', item)" [class.selected]="selectedItems['diet'] === item">
               <img [src]="item.img" alt="{{ item.name }}" class="item-image">
               <span>{{ item.name }}</span>
             </div>
@@ -95,7 +94,7 @@
           <div class="circle">i</div>
         </div>
           <div id="energy">
-            <div *ngFor="let item of energyItems" class="item">
+            <div *ngFor="let item of energyItems" class="item" (click)="selectItem('energy', item)" [class.selected]="selectedItems['energy'] === item">
               <img [src]="item.img" alt="{{ item.name }}" class="item-image">
               <span>{{ item.name }}</span>
             </div>
