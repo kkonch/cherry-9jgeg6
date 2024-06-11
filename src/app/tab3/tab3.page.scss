@@ -5,13 +5,11 @@
     margin-right: 330px;
 }
 
-
 .cherry-label {
     font-family: 'Cherry Bomb';
     color: #84012A;
     font-size: 30px;
 }
-
 
 .cherry-logo, ion-toolbar, .header-content, .message-info,
  .learn-more, .phase, .mood-container, .exercise-container,
@@ -21,13 +19,11 @@
     justify-content: center;
 }
 
-
 #cherry-icon {
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
-
 
 ion-toolbar {
     padding: 0;
@@ -36,13 +32,11 @@ ion-toolbar {
     border-bottom: 1px solid #959EC9;
 }
 
-
 ion-title {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-
 
 .message-box {
     width: 93%;
@@ -54,31 +48,26 @@ ion-title {
     display: block;
 }
 
-
 ion-label {
     font-family: 'Inter';
     color: #630F0F;
     font-size: 18px;
 }
 
-
 .message-info {
     padding-top: 10px;
     font-size: 14px;
 }
-
 
 .phase {
     padding-top: 5px;
     font-size: 14px;
 }
 
-
 .learn-more {
     font-size: 10px;
     padding-top: 10px;
 }
-
 
 .information-container {
     width: 93%;
@@ -93,7 +82,6 @@ ion-label {
     justify-content: space-around;
 }
 
-
 .mood-container, .exercise-container, .diet-container, .energy-container {
     width: 90%;
     height: 20%;
@@ -106,7 +94,6 @@ ion-label {
     position: relative;
 }
 
-
 .Mood, .Exercise, .Diet, .Energy {
     font-family: 'Cherry Bomb';
     font-size: 40px;
@@ -118,7 +105,6 @@ ion-label {
     transition: opacity 0.5s ease-in-out;
 }
 
-
 .mood-text, .exercise-text, .diet-text, .energy-text {
     width: 90%;
     opacity: 0;
@@ -128,22 +114,17 @@ ion-label {
     transition: opacity 0.5s ease-in-out;
 }
 
-
 .mood-container:hover, .exercise-container:hover, .diet-container:hover, .energy-container:hover {
     height: 40%;
     transition: 1s;
     flex: small;
 
-
     .Mood, .Exercise, .Diet, .Energy {
         opacity: 0;
     }
-
 
     .mood-text, .exercise-text,
     .diet-text, .energy-text {
         opacity: 1;
     }
-
-
 }

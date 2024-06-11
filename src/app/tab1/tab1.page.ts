@@ -10,12 +10,11 @@ import { PhaseService } from '../services/phase-service';
 })
 
 export class Tab1Page implements AfterViewInit {
-
-// export class Tab1Page {
   @ViewChild('doughnutCanvas') doughnutCanvas!: ElementRef<HTMLCanvasElement>;
   doughnutChart: any;
   currentDate: Date;
   phaseName: string = '?';
+  previousBool: boolean = false;
 
   constructor(private phaseService: PhaseService) {
     this.currentDate = new Date();
@@ -54,6 +53,24 @@ export class Tab1Page implements AfterViewInit {
           cutout: '70%'
         }
       });
+    }
+  }
+
+  sideBarAppear(bool: boolean) {
+    const backdrop = document.getElementById('more-options-backdrop');
+    const sideBar = document.getElementById('side-bar');
+
+    if (!this.previousBool && bool && backdrop && sideBar) {
+      backdrop.style.display = 'block';
+      backdrop.style.transition = 'opacity 0.5s ease;'
+      sideBar.style.display = 'block';
+      sideBar.style.transition = 'left 0.5s ease'
+      this.previousBool = true;
+    }
+    else if (this.previousBool && bool && backdrop && sideBar) {
+      backdrop.style.display = 'none';
+      sideBar.style.display = 'none';
+      this.previousBool = false;
     }
   }
 }

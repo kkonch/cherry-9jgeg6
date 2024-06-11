@@ -41,12 +41,48 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    // padding-left: 90px;
   }
   
+  .main {
+    position: relative;
+  }
+
+  #more-options-backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: #02141c; 
+    opacity: 40%;
+    z-index: 4;
+    position: absolute;
+  }
+
+  #side-bar {
+    width: 200px;
+    height: 100%;
+    background-color: #D3EDF9; 
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .options-text {
+    font-size: 27px;
+    color: #02141c;
+    display: block;
+    margin-left: 10px;
+  }
+
+  #logout {
+    color: #84012A;
+    margin-top: 270%;
+  }
+
   .main-container {
     flex-direction: column;
     height: 100%;
+    z-index: 1;
+    position: relative;
   }
 
   .key-container, .date-container, .donut-chart-container {
@@ -123,7 +159,7 @@
   }
 
   .donut-chart-container {
-    height: 66%;
+    height: 67%;
     position: relative;
     background-color: #F5F5F5;
     flex-direction: column;
@@ -156,6 +192,3 @@
     z-index: 1;
     margin-top: -10px;
   }
-
-
-  
