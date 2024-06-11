@@ -25,4 +25,8 @@ export class LoginPage {
       this.router.navigate(['/tab1']);
     }
   }
+
+  navigateToHome() {
+    this.router.navigate(['/tabs/tab1']);
+  }
 }

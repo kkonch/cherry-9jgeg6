@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <div class="header-content">
-      <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+      <ion-icon name="menu-outline" class="menu-icon" (click)="sideBarAppear(true)"></ion-icon>
       <ion-title>
         <div class="cherry-logo">
           <ion-img id="cherry-icon" src="assets/icon/cherry.png"></ion-img>
@@ -11,6 +11,15 @@
     </div>
   </ion-toolbar>
 </ion-header>
+
+<div id="more-options-backdrop" style="display: none"></div>
+<div id="side-bar" style="display: none">
+  <br><br><ion-label class="options-text" id="profile" (click)="navigateToProfile()">Profile</ion-label><br>
+  <ion-label class="options-text" id="sync">Sync</ion-label><br>
+  <ion-label class="options-text" id="settings">Settings</ion-label><br>
+  <ion-label class="options-text" id="help">Help</ion-label><br>
+  <ion-label class="options-text" id="logout" (click)="navigateToLogin()">Logout</ion-label>
+</div>
 
 <ion-content>
   <div id="calendar-container">
@@ -31,7 +40,7 @@
     </ion-datetime>
   </div>
 
-  <div id="main-symptoms-container">
+  <div id="main-symptoms-container" style="display: none;">
     <div class="symptoms-message">
       <ion-label class="symptoms-text">Select your symptoms with the available choices</ion-label>
       <ion-label class="learn-more">learn more below</ion-label>
@@ -104,7 +113,7 @@
 
     <div class="buttons">
       <ion-button id="back" (click)="sectionChange(2)" >Back</ion-button>
-      <ion-button id="Done">Done</ion-button>
+      <ion-button id="Done" (click)="navigateToHome()">Done</ion-button>
     </div>
   </div>
   

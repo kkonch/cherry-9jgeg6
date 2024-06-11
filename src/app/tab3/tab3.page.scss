@@ -38,6 +38,42 @@ ion-title {
     justify-content: flex-start;
 }
 
+.main {
+    position: relative;
+  }
+
+#more-options-backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: #02141c; 
+    opacity: 40%;
+    z-index: 4;
+    position: absolute;
+}
+
+#side-bar {
+    width: 200px;
+    height: 100%;
+    background-color: #D3EDF9; 
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+    margin-top: 18%;
+}
+
+.options-text {
+    font-size: 27px;
+    color: #02141c;
+    display: block;
+    margin-left: 10px;
+}
+
+#logout {
+    color: #84012A;
+    margin-top: 260%;
+}
+
 .message-box {
     width: 93%;
     height: 10%;

@@ -21,8 +21,13 @@ export class ProfilePage {
         password: ['', Validators.required]
       });
     }
+    
     onLogin(){
       console.log("hi!")
+    }
+
+    navigateToHome() {
+      this.router.navigate(['/tabs/tab1']);
     }
 }
 
