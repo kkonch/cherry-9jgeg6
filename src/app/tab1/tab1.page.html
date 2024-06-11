@@ -17,11 +17,11 @@
   <div class="main">
     <div id="more-options-backdrop" style="display: none"></div>
     <div id="side-bar" style="display: none">
-      <br><br><ion-label class="options-text" id="profile">Profile</ion-label><br>
+      <br><br><ion-label class="options-text" id="profile" (click)="navigateToProfile()">Profile</ion-label><br>
       <ion-label class="options-text" id="sync">Sync</ion-label><br>
       <ion-label class="options-text" id="settings">Settings</ion-label><br>
       <ion-label class="options-text" id="help">Help</ion-label><br>
-      <ion-label class="options-text" id="logout">Logout</ion-label>
+      <ion-label class="options-text" id="logout" (click)="navigateToLogin()">Logout</ion-label>
     </div>
 
     <div class="main-container">

@@ -1,6 +1,8 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
 import { PhaseService } from '../services/phase-service';
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -16,7 +18,7 @@ export class Tab1Page implements AfterViewInit {
   phaseName: string = '?';
   previousBool: boolean = false;
 
-  constructor(private phaseService: PhaseService) {
+  constructor(private phaseService: PhaseService, private router: Router) {
     this.currentDate = new Date();
     this.phaseName = this.phaseService.allPhaseData()[0].phaseName;
     Chart.register(...registerables);
@@ -73,7 +75,12 @@ export class Tab1Page implements AfterViewInit {
       this.previousBool = false;
     }
   }
+
+  navigateToProfile() {
+    this.router.navigate(['/profile']);
+  }
+
+  navigateToLogin() {
+    this.router.navigate(['/login']);
+  }
 }
-
-
-
