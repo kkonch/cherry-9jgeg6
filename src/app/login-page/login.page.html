@@ -1,13 +1,31 @@
-<ion-header [translucent]="true">
-    <ion-toolbar>
-      <div class="header-content">
-        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-        <ion-title>
-          <div class="cherry-logo">
-            <ion-img id="cherry-icon" src="assets/icon/cherry.png"></ion-img>
-            <ion-label class="cherry-label">C H E R R Y</ion-label>
-          </div>
-        </ion-title>
-      </div>
-    </ion-toolbar>
-  </ion-header>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<div class="content-center">
+  <div class="cherry-logo">
+    <ion-label>Hi Welcome to</ion-label>
+    <ion-label class="cherry-label">C H E R R Y</ion-label>
+    <ion-img id="cherry-icon" src="assets/icon/cherry.png"></ion-img>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-label justify-content-center><b>Login</b> to get started</ion-label>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <ion-item>
+          <ion-label id="starter-text" position="floating">Email</ion-label>
+          <ion-input formControlName="email" type="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label id="starter-text" position="floating">Password</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <ion-button type="submit" (click)="navigateToHome()">Login</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</div>
