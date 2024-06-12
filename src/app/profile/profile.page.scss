@@ -1,0 +1,134 @@
+.menu-icon {
+    display: flex;
+    color: #0E103D;
+    font-size: 50px;
+    margin-right: 330px;
+}
+    
+ion-label {
+    font-family: 'Inter';
+    color: #0E103D;
+    font-size: 18px;
+}
+  
+.cherry-label {
+    font-family: 'Cherry Bomb';
+    color: #84012A;
+    font-size: 30px;
+}
+
+ion-toolbar {
+    padding: 0;
+    min-height: 40px;
+    --background: #D3EDF9;
+    border-bottom: 1px solid #959EC9;
+}
+
+.cherry-logo, ion-toolbar, .header-content, .pfp-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+#cherry-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+  
+ion-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pfp-img {
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+ion-img {
+    max-width: 200px;
+    height: auto;
+}
+
+ion-list {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+ion-item {
+    --background: #FFFEEA;
+    border-radius: 8px;
+    margin-bottom: 35px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+ion-input {
+    --background: #FFFEEA;
+    color: #630F0F;
+    opacity: 75%;
+}
+
+ion-select {
+    --background: #FFFEEA;
+    color: #630F0F;
+    opacity: 75%;
+}
+
+#name {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #630F0F;
+}
+
+#more-options-backdrop {
+    width: 100%;
+    height: 100%;
+    background-color: #02141c; 
+    opacity: 40%;
+    z-index: 4;
+    position: absolute;
+}
+
+#side-bar {
+    width: 200px;
+    height: 100%;
+    background-color: #D3EDF9; 
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+    margin-top: 13.3%;
+}
+
+.options-text {
+    font-size: 27px;
+    color: #02141c;
+    display: block;
+    margin-left: 10px;
+}
+
+#logout {
+    color: #84012A;
+    margin-top: 295%;
+}
+
+ion-button {
+    margin-top: 20px;
+    width: 150px;
+    display: block;
+    font-size: 18px;
+    border-radius: 10px;
+    --color: #ffffff;
+    --background: #0E103D;
+    --background-activated: #84012A;
+    --box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+  

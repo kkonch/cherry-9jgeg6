@@ -1,194 +1,194 @@
 .menu-icon {
-    display: flex;
-    color: #0E103D;
-    font-size: 50px;
-    margin-right: 330px;
-  }
-  
-  ion-label {
-    font-family: 'Inter';
-    color: #0E103D;
-    font-size: 18px;
-  }
-  
-  .cherry-label {
-    font-family: 'Cherry Bomb';
-    color: #84012A;
-    font-size: 30px;
-  }
-  
-  .cherry-logo, ion-toolbar, .header-content, .main-container, .date-container,
-  .donut-chart-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  color: #0E103D;
+  font-size: 50px;
+  margin-right: 330px;
 }
   
-  #cherry-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  ion-toolbar {
-    padding: 0;
-    min-height: 40px;
-    --background: #D3EDF9;
-    border-bottom: 1px solid #959EC9;
-  }
-  
-  ion-title {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .main {
-    position: relative;
-  }
-
-  #more-options-backdrop {
-    width: 100%;
-    height: 100%;
-    background-color: #02141c; 
-    opacity: 40%;
-    z-index: 4;
-    position: absolute;
-  }
-
-  #side-bar {
-    width: 200px;
-    height: 100%;
-    background-color: #D3EDF9; 
-    z-index: 5;
-    position: absolute;
-    top: 0;
-    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
-  }
-
-  .options-text {
-    font-size: 27px;
-    color: #02141c;
-    display: block;
-    margin-left: 10px;
-  }
-
-  #logout {
-    color: #84012A;
-    margin-top: 270%;
-  }
-
-  .main-container {
-    flex-direction: column;
-    height: 100%;
-    z-index: 1;
-    position: relative;
-  }
-
-  .key-container, .date-container, .donut-chart-container {
-    width: 93%;
-    border-radius: 10px;
-    margin: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-
-  .key-container {
-    height: 23%;
-    border-radius: 10px;
-    background-color: #FFFEEA;
-  }
-  
-  .cycle-types {
-    padding-top: 3%;
-    width: 95%;
-    margin-left: 3%;
-  }
-  
-  ion-row {
-    display: block;
-  }
-  
-  ion-col {
-    display: inline-block;
-    padding: 8px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  ion-row:first-of-type ion-col:nth-of-type(3) {
-    text-align: right;
+ion-label {
+  font-family: 'Inter';
+  color: #0E103D;
+  font-size: 18px;
 }
 
-  .key-text {
-    font-size: 25px;
-    color: #282749;
-  }
+.cherry-label {
+  font-family: 'Cherry Bomb';
+  color: #84012A;
+  font-size: 30px;
+}
 
-  .menstruation-color, .ovulation-color, .follicular-color, .luteal-color {
-    width: 60px;
-    height: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  }
-  
-  .menstruation-color {
-    background-color: #84012A;
-  }
-  
-  .ovulation-color {
-    background-color: #4F5172;
-  }
-  
-  .follicular-color {
-    background-color: #989FC7;
-  }
-  
-  .luteal-color {
-    background-color: #282749;
-  }
-  
-  .date-container {
-    height: 10%;
-    background-color: #282749;
-  }
+.cherry-logo, ion-toolbar, .header-content, .main-container, .date-container,
+.donut-chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .current-date {
-    font-family: 'Cherry Bomb';
-    font-size: 40px;
-    color: #F5F5F5;
-  }
+#cherry-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
 
-  .donut-chart-container {
-    height: 67%;
-    position: relative;
-    background-color: #F5F5F5;
-    flex-direction: column;
-  }
-  
-  .announce-text {
-    color: #0E103D;
-    font-size: 23px;
-    margin-top: 5%;
-    margin-bottom: -10px;
-  }
-  
-  .phase-name {
-    color: #84012A;
-    font-size: 28px;
-    margin-top: -5px;
-  }
-  
-  .countdown {
-    top: 49%;
-    position: absolute;
-    text-align: center;
-    font-size: 25px;
-    z-index: 2;
-  }
-  
-  .donut {
-    max-width: 350px;
-    height: auto;
-    z-index: 1;
-    margin-top: -10px;
-  }
+ion-toolbar {
+  padding: 0;
+  min-height: 40px;
+  --background: #D3EDF9;
+  border-bottom: 1px solid #959EC9;
+}
+
+ion-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main {
+  position: relative;
+}
+
+#more-options-backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: #02141c; 
+  opacity: 40%;
+  z-index: 4;
+  position: absolute;
+}
+
+#side-bar {
+  width: 200px;
+  height: 100%;
+  background-color: #D3EDF9; 
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.options-text {
+  font-size: 27px;
+  color: #02141c;
+  display: block;
+  margin-left: 10px;
+}
+
+#logout {
+  color: #84012A;
+  margin-top: 270%;
+}
+
+.main-container {
+  flex-direction: column;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.key-container, .date-container, .donut-chart-container {
+  width: 93%;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.key-container {
+  height: 23%;
+  border-radius: 10px;
+  background-color: #FFFEEA;
+}
+
+.cycle-types {
+  padding-top: 3%;
+  width: 95%;
+  margin-left: 3%;
+}
+
+ion-row {
+  display: block;
+}
+
+ion-col {
+  display: inline-block;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-row:first-of-type ion-col:nth-of-type(3) {
+  text-align: right;
+}
+
+.key-text {
+  font-size: 25px;
+  color: #282749;
+}
+
+.menstruation-color, .ovulation-color, .follicular-color, .luteal-color {
+  width: 60px;
+  height: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.menstruation-color {
+  background-color: #84012A;
+}
+
+.ovulation-color {
+  background-color: #4F5172;
+}
+
+.follicular-color {
+  background-color: #989FC7;
+}
+
+.luteal-color {
+  background-color: #282749;
+}
+
+.date-container {
+  height: 10%;
+  background-color: #282749;
+}
+
+.current-date {
+  font-family: 'Cherry Bomb';
+  font-size: 40px;
+  color: #F5F5F5;
+}
+
+.donut-chart-container {
+  height: 67%;
+  position: relative;
+  background-color: #F5F5F5;
+  flex-direction: column;
+}
+
+.announce-text {
+  color: #0E103D;
+  font-size: 23px;
+  margin-top: 5%;
+  margin-bottom: -10px;
+}
+
+.phase-name {
+  color: #84012A;
+  font-size: 28px;
+  margin-top: -5px;
+}
+
+.countdown {
+  top: 49%;
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  z-index: 2;
+}
+
+.donut {
+  max-width: 350px;
+  height: auto;
+  z-index: 1;
+  margin-top: -10px;
+}

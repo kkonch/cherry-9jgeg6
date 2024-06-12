@@ -278,3 +278,10 @@ h1 {
     color: #A22B05;
   }
 }
+
+.custom-alert {
+  --background: #D3EDF9;
+  --color: #28264B;
+  --header-font-family: 'Inter', sans-serif;
+  --message-font-family: 'Inter', sans-serif;
+}

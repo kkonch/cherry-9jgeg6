@@ -21,6 +21,20 @@ export class Tab2Page implements OnInit {
   energyItems: { name: string, img: string }[] = PhaseData.energyItems;
   selectedItems: { [key: string]: any } = {};
 
+  public alertButtons = [
+    {
+      text: 'No',
+      cssClass: 'alert-button-cancel',
+    },
+    {
+      text: 'Yes',
+      cssClass: 'alert-button-confirm',
+      handler: () => {
+        this.navigateToHome();
+      }
+    },
+  ];
+
   ngOnInit(): void {
 
   }

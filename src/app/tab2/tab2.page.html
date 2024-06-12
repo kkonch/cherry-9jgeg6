@@ -113,7 +113,8 @@
 
     <div class="buttons">
       <ion-button id="back" (click)="sectionChange(2)" >Back</ion-button>
-      <ion-button id="Done" (click)="navigateToHome()">Done</ion-button>
+      <ion-button id="Done">Done</ion-button>
+      <ion-alert trigger="Done" class="custom-alert" header="Are you sure?" [buttons]="alertButtons"></ion-alert> <!--(click)="navigateToHome()"-->
     </div>
   </div>
   
