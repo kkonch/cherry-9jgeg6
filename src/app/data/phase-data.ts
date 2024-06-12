@@ -85,13 +85,28 @@ export class PhaseData {
       ];
 
     constructor(date: Date, symptoms: string[]) {
-        if (symptoms[0] != 'none')
-            this.phaseName = 'Menstrual';
+      /* Uncomment to see different information of each phase*/
 
-        this.phaseName = 'Ovulating';
+      // this.phaseName = 'Menstrual';
+      // this.phaseInfo = PhaseData.menstrual;
 
-        if (this.phaseName == 'Ovulating')
-            this.phaseInfo = PhaseData.ovulation;
+      this.phaseName = 'Ovulating';
+      this.phaseInfo = PhaseData.ovulation;
+
+      // this.phaseName = 'Follicular';
+      // this.phaseInfo = PhaseData.follicular;
+
+      // this.phaseName = 'Luteal';
+      // this.phaseInfo = PhaseData.luteal;
+
+
+    //     if (symptoms[0] != 'none') {
+    //         this.phaseName = 'Menstrual';
+    //         this.phaseInfo = PhaseData.menstrual;
+    //     }
+
+    //     this.phaseName = 'Ovulating';
+    //     if (this.phaseName == 'Ovulating')
+    //         this.phaseInfo = PhaseData.ovulation;
     }
-
 }
