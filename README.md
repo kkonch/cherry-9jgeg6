@@ -7,7 +7,8 @@ Cherry is a menstrual and feminine health monitoring app, that focuses on the ed
 
 
 ## Link to Recorded Demo:
-
+<p> ❗ Must be logged into their uci email to watch the video ❗ </p>
+https://drive.google.com/file/d/14ke4le7Z8u-LS5O6MrMEwgejvqFg_-DD/view?usp=sharing
 
 ## Config
   <p>❗ Node.js must be at least version 20.11.0 ❗</p>
@@ -16,3 +17,6 @@ Cherry is a menstrual and feminine health monitoring app, that focuses on the ed
   <p>• npm install -g @ionic/cli</p>
   <p>• npm install chart.js</p>
   <p>• npm install @capacitor/preferences</p>
+
+## References
+https://www.sciencedirect.com/science/article/pii/S1472648323006983   -   Referenced research for symptoms experiences
