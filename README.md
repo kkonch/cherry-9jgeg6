@@ -3,7 +3,7 @@
     width="250" height="200">
   <br>C H E R R Y
 </h1>
-Cherry is a menstrual and feminine health monitoring app, that focuses on the educational aspect of femtech that many apps lack. Users can track their period while learning how to adjust their lifestyle, and how their bodies work during different phases of their cycle.
+Cherry is a menstrual and feminine health monitoring app that focuses on the educational aspect of femtech that many apps lack. Users can track their period while learning how to adjust their lifestyle, and how their bodies work during different phases of their cycle.
 
 
 ## Link to Recorded Demo:
